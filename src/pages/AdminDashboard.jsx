@@ -118,9 +118,9 @@ export default function AdminDashboard() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
-      {/* Main container - full viewport height usage */}
+
       <div className="min-h-screen flex flex-col">
-        {/* Header - sticky on scroll */}
+
         <header className="sticky top-0 z-10 bg-white/80 backdrop-blur-md border-b border-indigo-100 shadow-sm">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <h1 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
@@ -135,10 +135,10 @@ export default function AdminDashboard() {
           </div>
         </header>
 
-        {/* Main content */}
+
         <main className="flex-1 py-8 px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto space-y-10">
-            {/* Message toast */}
+
             {message && (
               <div
                 className={`p-4 rounded-xl text-center font-medium shadow-md animate-fade-in ${
@@ -151,7 +151,7 @@ export default function AdminDashboard() {
               </div>
             )}
 
-            {/* Form Card - elevated with glass effect */}
+
             <div className="bg-white/70 backdrop-blur-xl rounded-2xl shadow-xl border border-white/30 overflow-hidden">
               <div className="p-6 sm:p-8 lg:p-10">
                 <h2 className="text-3xl font-bold text-gray-800 mb-8 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
@@ -170,7 +170,7 @@ export default function AdminDashboard() {
 
                   <input
                     name="relationship"
-                    placeholder="Your relationship (optional)"
+                    placeholder="Your relationship with him or her"
                     value={form.relationship}
                     onChange={handleChange}
                     className="w-full px-5 py-4 bg-white/60 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-400 focus:border-transparent outline-none transition-all text-lg placeholder-gray-500"
@@ -178,7 +178,7 @@ export default function AdminDashboard() {
 
                   <textarea
                     name="thoughts"
-                    placeholder="Write everything you feel..."
+                    placeholder="Your thoughts, memories, expectations, or anything  about him/her can be listed here . Speak your mind..."
                     value={form.thoughts}
                     onChange={handleChange}
                     rows={7}
@@ -217,7 +217,7 @@ export default function AdminDashboard() {
               </div>
             </div>
 
-            {/* Entries Section */}
+
             <section>
               <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-8 text-center sm:text-left">
                 Your Hidden Thoughts ({entries.length})

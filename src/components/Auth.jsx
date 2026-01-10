@@ -34,7 +34,7 @@ export default function Auth() {
       <form onSubmit={handleLogin}>
         <input
           type="email"
-          placeholder="your@email.com"
+          placeholder="example: apox-rider@gmail.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required

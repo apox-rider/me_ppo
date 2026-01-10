@@ -55,10 +55,11 @@ export default function SurprisePage() {
         maxWidth: '700px',
         margin: '4rem auto',
         padding: '2.5rem',
-        background: '#fff',
+        background: '#ded7d7ff',
         borderRadius: '12px',
         boxShadow: '0 8px 30px rgba(0,0,0,0.12)',
         textAlign: 'center',
+        color: "black",
       }}
     >
       <h1 style={{ color: '#2a9d8f' }}>Hey {entry.name}!</h1>
